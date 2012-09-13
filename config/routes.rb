@@ -3,6 +3,7 @@ MyApp::Application.routes.draw do
 
   get "controller_test/bar"
 
+  get "controller_test/baz"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

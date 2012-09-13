@@ -1,2 +1,5 @@
-<h1>ControllerTest#bar</h1>
-<p>Find me in app/views/controller_test/bar.html.erb</p>
+<% provide(:title, 'bar') %>
+<h1><%= yield(:title)%></h1>
+<p>
+This is a test page
+</p>
