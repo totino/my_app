@@ -1,12 +1,17 @@
 MyApp::Application.routes.draw do
+  
+  get "users/new"
+  match '/signup' , to: 'users#new'
   get "controller_test/foo"
-
   get "controller_test/bar"
-
   get "controller_test/baz"
+  get "controller_test/home"
   # The priority is based upon order of creation:
   # first created -> highest priority.
-
+  root to: 'controller_test#home'
+  match 'foo', to: 'controller_test#foo'
+  match 'bar', to: 'controller_test#bar'
+  match 'baz', to: 'controller_test#baz'
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action

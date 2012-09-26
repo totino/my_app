@@ -7,4 +7,7 @@ class ControllerTestController < ApplicationController
 
   def baz
   end
+
+  def home
+  end
 end
